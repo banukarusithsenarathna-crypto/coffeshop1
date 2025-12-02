@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House | Premium Coffee & Atmosphere</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- Navigation -->
+<header class="header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-coffee"></i>
+                <h1>Coffee House</h1>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#price" class="nav-link">Prices</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#" class="btn-order">Order Online</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h2 class="hero-title">Experience the Art of Coffee</h2>
+        <p class="hero-subtitle">Freshly roasted beans, expertly brewed with passion in every cup</p>
+        <div class="hero-buttons">
+            <button class="btn-primary" onclick="showWelcome()">Discover Our Coffee</button>
+            <a href="#menu" class="btn-secondary">View Menu</a>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Gallery</h2>
+            <p>Step into our world of coffee craftsmanship</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Espresso">
+                <div class="gallery-overlay">
+                    <h3>Espresso Perfection</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Coffee Shop">
+                <div class="gallery-overlay">
+                    <h3>Cozy Atmosphere</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Coffee Beans">
+                <div class="gallery-overlay">
+                    <h3>Premium Beans</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814" alt="Latte Art">
+                <div class="gallery-overlay">
+                    <h3>Latte Art</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187" alt="Coffee Break">
+                <div class="gallery-overlay">
+                    <h3>Perfect Moments</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Menu Section -->
+<section id="menu" class="menu-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Special Menu</h2>
+            <p>Handcrafted beverages made with the finest ingredients</p>
+        </div>
+        <div class="menu-cards">
+            <div class="menu-card">
+                <div class="menu-icon">
+                    <i class="fas fa-coffee"></i>
+                </div>
+                <h3>Espresso</h3>
+                <p>Strong, concentrated coffee served in a small shot</p>
+            </div>
+            <div class="menu-card">
+                <div class="menu-icon">
+                    <i class="fas fa-mug-hot"></i>
+                </div>
+                <h3>Cappuccino</h3>
+                <p>Equal parts espresso, steamed milk, and milk foam</p>
+            </div>
+            <div class="menu-card">
+                <div class="menu-icon">
+                    <i class="fas fa-beer"></i>
+                </div>
+                <h3>Latte</h3>
+                <p>Smooth espresso with steamed milk and light foam</p>
+            </div>
+            <div class="menu-card">
+                <div class="menu-icon">
+                    <i class="fas fa-ice-cream"></i>
+                </div>
+                <h3>Mocha</h3>
+                <p>Rich chocolate combined with espresso and milk</p>
+            </div>
+            <div class="menu-card">
+                <div class="menu-icon">
+                    <i class="fas fa-glass-whiskey"></i>
+                </div>
+                <h3>Cold Brew</h3>
+                <p>Smooth coffee brewed cold for 12 hours</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Price Table -->
+<section id="price" class="price-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Price Table</h2>
+            <p>Quality coffee at reasonable prices</p>
+        </div>
+        <div class="table-container">
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>Drink</th>
+                        <th>Small</th>
+                        <th>Medium</th>
+                        <th>Large</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Espresso</td>
+                        <td>LKR 450</td>
+                        <td>LKR 550</td>
+                        <td>LKR 650</td>
+                    </tr>
+                    <tr>
+                        <td>Cappuccino</td>
+                        <td>LKR 550</td>
+                        <td>LKR 650</td>
+                        <td>LKR 750</td>
+                    </tr>
+                    <tr>
+                        <td>Latte</td>
+                        <td>LKR 600</td>
+                        <td>LKR 750</td>
+                        <td>LKR 850</td>
+                    </tr>
+                    <tr>
+                        <td>Mocha</td>
+                        <td>LKR 650</td>
+                        <td>LKR 750</td>
+                        <td>LKR 900</td>
+                    </tr>
+                    <tr>
+                        <td>Cold Brew</td>
+                        <td>LKR 550</td>
+                        <td>LKR 650</td>
+                        <td>LKR 800</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="note">
+            <p><i class="fas fa-info-circle"></i> All prices are in Sri Lankan Rupees (LKR). Add-ons available for extra shot, flavors, and milk alternatives.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Contact Us</h2>
+            <p>Visit us or get in touch</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Galle Road, Colombo 03, Sri Lanka</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+94 77 340 2519</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>coffeehouse@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Opening Hours</h3>
+                        <p>Mon-Fri: 7:00 AM - 9:00 PM</p>
+                        <p>Weekends: 8:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                    <a href="https://maps.google.com" target="_blank" class="social-icon">
+                        <i class="fas fa-map-pin"></i>
+                        <span>Find Us</span>
+                    </a>
+                    <a href="https://tripadvisor.com" target="_blank" class="social-icon">
+                        <i class="fab fa-tripadvisor"></i>
+                        <span>TripAdvisor</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-coffee"></i>
+                <h2>Coffee House</h2>
+                <p>Premium coffee experience since 2010</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#price">Prices</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Coffee House | Designed by Banuka | All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+</body>
+</html>
